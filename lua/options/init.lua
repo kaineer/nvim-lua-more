@@ -28,6 +28,8 @@ assign(vim.opt, {
   wrap = true,             -- code should not hide after right edge
   termguicolors = true,    -- because nord theme needs rgb colors
 
+  clipboard = "unnamedplus", -- system clipboard
+
   swapfile = false,
   fileencoding = "utf-8",
 
@@ -40,5 +42,6 @@ assign(vim.g, {
   markdown_fenced_languages = {
     "html", "python", "lua", "vim",
     "typescript", "javascript", "json",
-  }
+  },
+
 })
