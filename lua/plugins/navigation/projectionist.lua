@@ -5,13 +5,16 @@
 return {
   "tpope/vim-projectionist",
   config = function()
-    local mkcmd = function(name)
-      return function()
-        if not pcall(function() vim.api.nvim_command(":" .. name) end) then
-          print("Could not use projectionist alternate")
-        end
-      end
-    end
+    -- local mkcmd = function(name)
+    --   return function()
+    --     if not pcall(function() vim.api.nvim_command(":" .. name) end) then
+    --       print("Could not use projectionist alternate")
+    --     end
+    --   end
+    -- end
+    local mkcmd = require("kaineer.cmd").buildMkcmd(
+      "Could not user projectionist alternate"
+    )
 
     require("which-key").register({
       a = {

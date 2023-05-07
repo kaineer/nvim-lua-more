@@ -44,27 +44,27 @@ local configTelescope = function()
   }
 
   map.normal({
-    { '<space>of', telescope_cmd('find_files') },
-    { '<space>ot', telescope_cmd('file_browser') },
-    { '<space>oh', telescope_cmd('oldfiles') },
-    { '<space>og', telescope_cmd('git_files') },
-    { '<space>om', telescope_cmd('keymaps') },
-    { '<space>or', telescope_cmd('registers') },
-    { '<space>ol', telescope_cmd('current_buffer_fuzzy_find') },
-    { '<space>/',  telescope_cmd('current_buffer_fuzzy_find') },
-    { '<space>od', telescope_cmd('diagnostics') },
-    { '<space>rg', telescope_cmd('live_grep') },
-    { '<space>op', telescope_cmd('project') },
+    { '<leader>of', telescope_cmd('find_files') },
+    { '<leader>ot', telescope_cmd('file_browser') },
+    { '<leader>oh', telescope_cmd('oldfiles') },
+    { '<leader>og', telescope_cmd('git_files') },
+    { '<leader>om', telescope_cmd('keymaps') },
+    { '<leader>or', telescope_cmd('registers') },
+    { '<leader>ol', telescope_cmd('current_buffer_fuzzy_find') },
+    { '<leader>/',  telescope_cmd('current_buffer_fuzzy_find') },
+    { '<leader>od', telescope_cmd('diagnostics') },
+    { '<leader>rg', telescope_cmd('live_grep') },
+    { '<leader>op', telescope_cmd('project') },
 
-    { '<space>ouu', ":UrlView<cr>" },
-    { '<space>oup', ":UrlView packer<cr>" },
-    -- { '<space>gi', cmd('gh issues') },
-    -- { '<space>gr', cmd('gh run') },
-    -- { '<space>gg', cmd('gh gist') },
-    -- { '<space>gp', cmd('gh pull_requests') },
+    { '<leader>ouu', ":UrlView<cr>" },
+    { '<leader>oup', ":UrlView packer<cr>" },
+    -- { '<leader>gi', cmd('gh issues') },
+    -- { '<leader>gr', cmd('gh run') },
+    -- { '<leader>gg', cmd('gh gist') },
+    -- { '<leader>gp', cmd('gh pull_requests') },
 
     -- notifications
-    -- { '<space>on', cmd('notify') },
+    -- { '<leader>on', cmd('notify') },
   })
 end
 

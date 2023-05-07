@@ -32,6 +32,18 @@ return function(use)
         'ssh://gitlab.htmlacademy.dev',
       }
 
+      local mkcmd = require("kaineer.cmd").buildMkcmd("WTF")
+
+      require("which-key").register({
+        [" "] = {
+          g = {
+            s = { mkcmd("G"), "Git status" },
+            l = { mkcmd("GV"), "Git log" },
+            m = { mkcmd("GitMessenger"), "Git annotate current line" },
+          }
+        }
+      })
+
       require('kaineer.map').visual({
         { '<c-o>', ':GBrowse<cr>' },
       })

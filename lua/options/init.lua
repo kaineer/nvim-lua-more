@@ -43,5 +43,5 @@ assign(vim.g, {
     "html", "python", "lua", "vim",
     "typescript", "javascript", "json",
   },
-
+  mapleader = " ",
 })

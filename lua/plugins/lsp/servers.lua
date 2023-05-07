@@ -19,9 +19,9 @@ local on_attach = function(_, bufnr)
     gD = buf.declaration,
     gr = buf.references,
     K  = buf.hover,
-    ['<space>rn'] = buf.rename,
-    ['<space>ca'] = buf.code_action,
-    ['<space>f'] = buf.formatting
+    ['<leader>rn'] = buf.rename,
+    ['<leader>ca'] = buf.code_action,
+    ['<leader>f'] = buf.formatting
   }, function(fn, key) vim.keymap.set('n', key, fn, opts)
   end)
 end

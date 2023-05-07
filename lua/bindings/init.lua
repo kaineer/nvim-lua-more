@@ -33,19 +33,8 @@ local tabs = {
   prev  = mkcmd('tabprevious', 'previous', 'Tabs'),
 }
 
-local projectionist = {
-  alt = mkcmd('A'),
-  altv = mkcmd('AV'),
-  alts = mkcmd('AS'),
-}
-
 local tmux = {
   rename = mkcmd('!n')
-}
-
-local debug = {
-  syntaxName = function()
-  end
 }
 
 map.normal({
@@ -59,29 +48,26 @@ map.normal({
   --
   { '<m-i>', ':sp<cr><m-k>gg' },
   --
-  { '<space>ws', window.splith },
-  { '<space>w2', window.splith },
-  { '<space>wv', window.splitv },
-  { '<space>w3', window.splitv },
-  { '<space>wc', window.close },
-  { '<space>w0', window.close },
-  { '<space>w1', window.only },
-  { '<space>wq', window.quit },
-  { '<space>k',  diagnostics.next },
-  { '<space>j',  diagnostics.prev },
-  { '<space>xx', troubles.toggle },
-  { '<space>xr', troubles.refresh },
-  { '<space>tc', tabs.new },
-  { '<space>tx', tabs.close },
-  { '<space>tl', tabs.next },
-  { '<space>th', tabs.prev },
-  -- { '<space>aa', projectionist.alt },
-  -- { '<space>av', projectionist.altv },
-  -- { '<space>as', projectionist.alts },
-  { '<space>n',  tmux.rename },
-  { '<space>gm', mkcmd('GitMessenger') },
-  { '<space>gs', mkcmd('G') },
-  { '<space>gl', mkcmd('GV') },
+  { '<leader>ws', window.splith },
+  { '<leader>w2', window.splith },
+  { '<leader>wv', window.splitv },
+  { '<leader>w3', window.splitv },
+  { '<leader>wc', window.close },
+  { '<leader>w0', window.close },
+  { '<leader>w1', window.only },
+  { '<leader>wq', window.quit },
+  { '<leader>k',  diagnostics.next },
+  { '<leader>j',  diagnostics.prev },
+  { '<leader>xx', troubles.toggle },
+  { '<leader>xr', troubles.refresh },
+  { '<leader>tc', tabs.new },
+  { '<leader>tx', tabs.close },
+  { '<leader>tl', tabs.next },
+  { '<leader>th', tabs.prev },
+  { '<leader>n',  tmux.rename },
+  { '<leader>gm', mkcmd('GitMessenger') },
+  { '<leader>gs', mkcmd('G') },
+  { '<leader>gl', mkcmd('GV') },
 
   { 'zz', 'V$%zf' },
 })

@@ -14,6 +14,8 @@ return {
         "lua",
         "cpp",
         "python",
+        "ruby",
+        "rust",
         "make",
         "javascript"
       }
