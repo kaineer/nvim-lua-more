@@ -1,3 +1,5 @@
+-- lua/kaineer/cmd.lua
+
 return {
   buildMkcmd = function(message)
     return function(name) -- mkcmd()
