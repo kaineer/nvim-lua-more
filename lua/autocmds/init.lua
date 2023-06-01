@@ -19,7 +19,7 @@ au("CurrentColumn", function(cmd)
   cmd("FileType", {
     pattern = { "yaml", "python", "json" },
     callback = function()
-      vim.wo.cuc = true
+      vim.wo.CurrentColumn = true
     end,
   })
 end)
