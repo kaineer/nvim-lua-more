@@ -47,6 +47,7 @@ return function()
       format = lkicons.cmp_format({
         with_text = true,
         maxwidth = 50,
+        mode = 'symbol_text',
 
         before = function(_, vim_item)
           return vim_item

@@ -1,0 +1,6 @@
+{
+  "key": "value",
+  "somemorekey": {
+    "internalkey": 3
+  }
+}

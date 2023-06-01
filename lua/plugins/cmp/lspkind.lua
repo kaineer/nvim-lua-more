@@ -11,6 +11,8 @@ return {
   -- defines how annotations are shown
   -- default: symbol
   -- options: 'text', 'text_symbol', 'symbol_text', 'symbol'
+  -- TODO: return symbol_text after nerd fonts are fixed
+  -- mode = 'symbol_text',
   mode = 'symbol_text',
 
   -- default symbol map
@@ -18,36 +20,36 @@ return {
   -- 'codicons' for codicon preset (requires vscode-codicons font)
   --
   -- default: 'default'
-  preset = 'codicons',
+  -- preset = 'codicons',
 
   -- override preset symbols
   --
   -- default: {}
-  symbol_map = {
-    Text = "",
-    Method = "",
-    Function = "",
-    Constructor = "",
-    Field = "ﰠ",
-    Variable = "",
-    Class = "ﴯ",
-    Interface = "",
-    Module = "",
-    Property = "ﰠ",
-    Unit = "塞",
-    Value = "",
-    Enum = "",
-    Keyword = "",
-    Snippet = "",
-    Color = "",
-    File = "",
-    Reference = "",
-    Folder = "",
-    EnumMember = "",
-    Constant = "",
-    Struct = "פּ",
-    Event = "",
-    Operator = "",
-    TypeParameter = ""
-  },
+  -- symbol_map = {
+  --   Text = "",
+  --   Method = "",
+  --   Function = "",
+  --   Constructor = "",
+  --   Field = "ﰠ",
+  --   Variable = "",
+  --   Class = "ﴯ",
+  --   Interface = "",
+  --   Module = "",
+  --   Property = "ﰠ",
+  --   Unit = "塞",
+  --   Value = "",
+  --   Enum = "",
+  --   Keyword = "",
+  --   Snippet = "",
+  --   Color = "",
+  --   File = "",
+  --   Reference = "",
+  --   Folder = "",
+  --   EnumMember = "",
+  --   Constant = "",
+  --   Struct = "פּ",
+  --   Event = "",
+  --   Operator = "",
+  --   TypeParameter = ""
+  -- },
 }

@@ -12,7 +12,7 @@ return {
     'hrsh7th/vim-vsnip-integ',
     'andersevenrud/cmp-tmux',
     -- icons
-    'onsails/lspkind-nvim',
+    'onsails/lspkind.nvim',
   },
   config = require("plugins.cmp.setup"),
 }

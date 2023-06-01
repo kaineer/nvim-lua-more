@@ -14,3 +14,12 @@ au("DirEnv", function(cmd)
     end,
   })
 end)
+
+au("CurrentColumn", function(cmd)
+  cmd("FileType", {
+    pattern = { "yaml", "python", "json" },
+    callback = function()
+      vim.wo.cuc = true
+    end,
+  })
+end)

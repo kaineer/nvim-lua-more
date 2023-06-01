@@ -18,6 +18,7 @@ return packer.startup(function(use)
     "navigation",      -- fs, tmux navigation
     "cmp",             -- completion
     "status",          -- status line
+    -- "neorg",
     "which-key",
     "git",             -- git
     "gist",            -- making gists
@@ -29,8 +30,10 @@ return packer.startup(function(use)
     "markup",          -- markup-related packages
   }), handle)
 
-  -- TODO
-  --
+  use {
+    "gpanders/editorconfig.nvim"
+  }
+
 
   if packer_bootstrap then
     packer.sync()

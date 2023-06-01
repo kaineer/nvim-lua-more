@@ -1,10 +1,21 @@
 -- lua/plugins/status/init.lua
 
-return {
+local icons_repo = "nvim-tree/nvim-web-devicons"
+
+local lualine = {
   "nvim-lualine/lualine.nvim",
   requires = {
-    "kyazdani42/nvim-web-devicons",
+    icons_repo,
     opt = true,
   },
   config = require("plugins.status.lualine"),
 }
+
+local devicons = {
+  icons_repo,
+}
+
+return function(use)
+  use(devicons)
+  use(lualine)
+end
