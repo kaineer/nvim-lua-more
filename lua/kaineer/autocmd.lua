@@ -16,6 +16,8 @@ function M.au(name, fn)
     end
     fn(cmd)
   end
+
+  return M.au
 end
 
 return M

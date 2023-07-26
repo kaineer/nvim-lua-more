@@ -12,12 +12,17 @@ return packer.startup(function(use)
 
   use "wbthomason/packer.nvim"
 
+  use {
+    "gpanders/editorconfig.nvim"
+  }
+
   kf.forEach(kf.prefix("plugins.", {
     "colorscheme",     -- color scheme
     "telescope",       -- fuzzy search system
     "navigation",      -- fs, tmux navigation
     "cmp",             -- completion
     "status",          -- status line
+    "eyeliner",
     -- "neorg",
     "which-key",
     "git",             -- git
@@ -29,11 +34,6 @@ return packer.startup(function(use)
     "languages",       -- programming languages
     "markup",          -- markup-related packages
   }), handle)
-
-  use {
-    "gpanders/editorconfig.nvim"
-  }
-
 
   if packer_bootstrap then
     packer.sync()
