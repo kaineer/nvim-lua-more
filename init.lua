@@ -1,4 +1,6 @@
 -- init.lua
 
-local paths = { "options", "autocmds", "bindings", "plugins" }
-require("kaineer.fn").forEach(paths, require)
+local fn = require("kaineer.fn")
+local subpaths = { "options", "autocmds", "bindings", "plugins" }
+
+fn.forEach(subpaths, require)
