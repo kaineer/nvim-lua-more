@@ -21,15 +21,17 @@ local configTelescope = function()
     telescope.load_extension(name)
   end
 
+  local theme = require('telescope.themes').get_ivy()
+
   forEach(extensionsToLoad, load_extension)
 
   telescope.setup {
-    defaults = require('telescope.themes').get_ivy(),
+    defaults = theme,
     extensions = {
       project = {
         base_dirs = {
           { path = '/home/kaineer/git', max_depth = 3 },
-          { path = '/home/kaineer/devel/htmlacademy', max_depth = 2 },
+          { path = '/home/kaineer/devel/htmlacademy', max_depth = 3 },
         },
         theme = 'ivy',
       },

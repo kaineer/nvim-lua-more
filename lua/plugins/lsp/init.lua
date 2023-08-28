@@ -19,7 +19,7 @@ local lspUtils = {
 }
 
 return function(use)
-  -- use(lspPrerequisites)
+  use(lspPrerequisites)
   use(lspUtils)
   use(lspConfig)
 end

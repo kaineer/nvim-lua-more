@@ -35,6 +35,8 @@ return packer.startup(function(use)
     "markup",          -- markup-related packages
   }), handle)
 
+  use "maxbrunsfeld/vim-yankstack"
+
   if packer_bootstrap then
     packer.sync()
   end

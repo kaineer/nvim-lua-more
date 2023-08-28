@@ -75,4 +75,12 @@ function M.prefix(pre, table)
   end)
 end
 
+function M.rqtap(paths, fn)
+  local objtab = {}
+  for i, v in ipairs(paths) do
+    objtab.insert(require(v))
+  end
+  return fn(objtab)
+end
+
 return M
