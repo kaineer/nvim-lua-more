@@ -1,4 +1,3 @@
-
 --
 -- lua/lsp/servers/tsserver.lua
 --

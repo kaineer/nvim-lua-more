@@ -1,13 +1,17 @@
 -- lua/plugins/colorscheme/nord.lua
 
+--
+-- documentation: https://www.nordtheme.com/docs/ports/vim
+-- github: https://github.com/nordtheme/vim
+--
 return {
   'arcticicestudio/nord-vim',
   config = function()
-    local kf = require("kaineer.fn")
+    local assign = require("kaineer.fn").assign
 
     vim.cmd('colorscheme nord')
 
-    kf.assign(vim.g, {
+    assign(vim.g, {
       nord_disable_background = true,
       nord_contrast = false,
       nord_borders = true

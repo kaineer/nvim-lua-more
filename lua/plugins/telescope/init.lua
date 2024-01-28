@@ -47,6 +47,7 @@ local configTelescope = function()
 
   map.normal({
     { '<leader>of', telescope_cmd('find_files') },
+    { '<leader>ob', telescope_cmd('buffers') },
     { '<leader>ot', telescope_cmd('file_browser') },
     { '<leader>oh', telescope_cmd('oldfiles') },
     { '<leader>og', telescope_cmd('git_files') },

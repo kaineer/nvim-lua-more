@@ -56,6 +56,10 @@ map.normal({
   { '<leader>w0', window.close },
   { '<leader>w1', window.only },
   { '<leader>wq', window.quit },
+  { '<leader>0',  window.close },
+  { '<leader>1',  window.only },
+  { '<leader>2',  window.splith },
+  { '<leader>3',  window.splitv },
   { '<leader>k',  diagnostics.next },
   { '<leader>j',  diagnostics.prev },
   { '<leader>xx', troubles.toggle },
@@ -79,5 +83,6 @@ map.visual({
 
 map.normal({
   { '<space>tj',
-    ':!browse "https://translate.google.com/?sl=ja&tl=ru&text=<c-r>""<cr>' }
+    ':!browse "https://translate.google.com/?sl=ja&tl=ru&text=<c-r>""<cr>' },
+  { '<m-n>', ':set number!<cr>' },
 })

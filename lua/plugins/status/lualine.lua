@@ -1,14 +1,19 @@
 -- lua/plugins/status/lualine.lua
 
 return function()
+  local csl = ''
+  local csr = ''
+  local ssl = ''
+  local ssr = ''
+
   require('lualine').setup {
     options = {
       icons_enabled = true,
       -- theme = 'powerline',
       -- theme = 'wombat',
       theme = 'nord',
-      component_separators = { left = '', right = ''},
-      section_separators = { left = '', right = ''},
+      component_separators = { left = csl, right = csr },
+      section_separators = { left = ssl, right = ssr },
       disabled_filetypes = {
         statusline = {},
         winbar = {},
