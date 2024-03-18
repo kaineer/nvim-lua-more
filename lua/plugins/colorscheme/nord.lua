@@ -5,7 +5,8 @@
 -- github: https://github.com/nordtheme/vim
 --
 return {
-  'arcticicestudio/nord-vim',
+  -- 'arcticicestudio/nord-vim',
+  'shaunsingh/nord.nvim',
   config = function()
     local assign = require("kaineer.fn").assign
 
@@ -26,7 +27,7 @@ return {
       },
       backgrounds = {
 	      "Normal", "LineNr", "SignColumn",
-      }
+      },
     })
   end,
 }

@@ -4,7 +4,7 @@
 
 local applyCmd = function(name)
   local au = require("kaineer.autocmd").au
-  local mod = require("autocmd." .. name)
+  local mod = require("autocmds." .. name)
   local group = mod.name
   local fn = mod.config
 

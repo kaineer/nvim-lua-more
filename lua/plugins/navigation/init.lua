@@ -2,7 +2,8 @@
 
 local packages = {
   "tmux",
-  "dirvish",
+  "oil",
+  -- "dirvish",
   "projectionist",
   "url"
 }
