@@ -30,6 +30,8 @@ return function()
     { '<leader>zd', ':Telekasten find_daily_notes<cr>' },
     { '<leader>zn', ':Telekasten find_notes<cr>' },
     { '<leader>zs', ':Telekasten search_notes<cr>' },
+    { '<leader>zgt', ':Telekasten goto_today<cr>' },
+    { '<leader>zt', ':Telekasten toggle_todo<cr>' },
     { '<leader>z', ':Telekasten<cr>' },
   })
 end

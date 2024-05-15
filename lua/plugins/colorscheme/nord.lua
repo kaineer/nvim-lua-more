@@ -15,7 +15,7 @@ return {
     assign(vim.g, {
       nord_disable_background = true,
       nord_contrast = false,
-      nord_borders = true
+      -- nord_borders = false,
     })
 
     vim.cmd(':hi Delimiter ctermfg=15')

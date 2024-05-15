@@ -14,3 +14,4 @@ end
 applyCmd("whitespaces")
 applyCmd("direnv")
 applyCmd("opls")
+applyCmd("term")

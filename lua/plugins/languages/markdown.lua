@@ -11,6 +11,9 @@ return {
       modules = {
         folds = true,
       },
+      links = {
+        conceal = true,
+      },
       filetypes = {
         md = true,
         markdown = true,
@@ -21,6 +24,7 @@ return {
         MkdnIncreaseHeading = false,
         MkdnDecreaseHeading = false,
         MkdnEnter = {{'n', 'v', 'i'}, '<CR>'},
+        MkdnTableFormat = {{'n'}, '<leader>mf' },
       }
     }
   end,

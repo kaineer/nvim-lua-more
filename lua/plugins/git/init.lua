@@ -8,7 +8,7 @@ local gitPlugins = {
   -- github
   'tpope/vim-rhubarb',
   -- gitlab
-  -- 'shumphrey/fugitive-gitlab.vim',
+  'shumphrey/fugitive-gitlab.vim',
   -- versions history
   'junegunn/gv.vim',
   -- marks at gutter

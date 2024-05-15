@@ -6,6 +6,10 @@ if vim.g.nvui then
   require("options.nvui")()
 end
 
+if vim.g.neovide then
+  require("options.neovide")()
+end
+
 assign(vim.opt, {
   -- Indent
   expandtab = true,

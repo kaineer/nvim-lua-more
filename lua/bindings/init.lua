@@ -47,6 +47,7 @@ map.normal({
   { '<c-x><c-c>', mkcmd('qa!') },
   --
   { '<m-i>', ':sp<cr><m-k>gg' },
+  { '<m-w>', ':close<cr>' },
   --
   { '<leader>ws', window.splith },
   { '<leader>w2', window.splith },
@@ -85,4 +86,8 @@ map.normal({
   { '<space>tj',
     ':!browse "https://translate.google.com/?sl=ja&tl=ru&text=<c-r>""<cr>' },
   { '<m-n>', ':set number!<cr>' },
+})
+
+map.normal({
+  { '<space>mf', ':MkdnTableFormat<cr>' },
 })
