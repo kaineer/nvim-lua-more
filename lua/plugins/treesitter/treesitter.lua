@@ -13,6 +13,7 @@ return {
       ensure_installed = {
         "yaml",
         "lua",
+        "http",
         "cpp",
         "python",
         "ruby",
